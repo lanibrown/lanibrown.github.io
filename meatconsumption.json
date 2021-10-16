@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "meatconsumption.csv"
+    "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/meatconsumption.csv"
   },
   "mark": "bar",
   "width": 270,
