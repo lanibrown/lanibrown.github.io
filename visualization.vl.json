@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"Region": "UK", "%": 46.6},
+      {"Region": "North East", "%": 49.1},
+      {"Region": "North West", "%": 49.4},
+      {"Region": "Yorkshire and The Humber", "%": 37.6},
+      {"Region": "East Midlands", "%": 45.1},
+      {"Region": "West Midlands", "%": 35.3},
+      {"Region": "East", "%": 47.3},
+      {"Region": "London", "%": 57.2},
+      {"Region": "South East", "%": 49.4},
+      {"Region": "South West", "%": 45.1},
+      {"Region": "Wales", "%": 40.7},
+      {"Region": "Scotland", "%": 44},
+      {"Region": "N Ireland", "%": 40.9}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Region", "type": "nominal", "axis": {"labelAngle": 90}},
+    "y": {"field": "%", "type": "quantitative"}
+  },
+  "config": {}
+}
