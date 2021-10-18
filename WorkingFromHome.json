@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
@@ -18,7 +19,7 @@
       {"Region": "N Ireland", "%": 40.9}
     ]
   },
-
+  "mark": "bar",
   "encoding": {
     "x": {"field": "Region", "type": "nominal", "axis": {"labelAngle": 90}},
     "y": {"field": "%", "type": "quantitative"}
