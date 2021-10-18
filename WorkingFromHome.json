@@ -19,6 +19,14 @@
     ]
   },
   "mark": "bar",
+  "title": {
+    "text": "Proportion of those employed who have worked from home",
+    "subtitle": "Percentage, by region, 2020. Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  }
   "encoding": {
     "x": {"field": "Region", "type": "nominal", "axis": {"labelAngle": 90}},
     "y": {"field": "%", "type": "quantitative"}
