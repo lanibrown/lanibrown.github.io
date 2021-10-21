@@ -59,15 +59,25 @@
     </script>
 </div>
 
+<p>This shows the Ozone Emissions </p>
+    
+    <!--Chart 3 -->
+  <div class="chart" id="chart3">
+      <script>
+        var myChart3 = "chart9_ozoneEmissionsAPI.json";
+        vegaEmbed('#chart3', myChart3);
+      </script>
+  </div>
+    
   <h3>New COVID Cases Comparison 1</h3>
 
   <p>The first of two charts, this chart compares three areas with relatively low new COVID cases. </p>
     
- <!--Chart 3 -->
- <div class="chart" id="chart3">
+ <!--Chart 4 -->
+ <div class="chart" id="chart4">
   <script>
-    var myChart3 = "Chart1API.json";
-    vegaEmbed('#chart3', myChart3);
+    var myChart4 = "Chart1API.json";
+    vegaEmbed('#chart4', myChart4);
   </script>
 </div>
 
@@ -75,11 +85,11 @@
 
   <p>The second of the two charts, this chart compares three areas with higher levels of new COVID cases. </p>
     
-<!--Chart 4 -->
-<div class="chart" id="chart4">
+<!--Chart 5 -->
+<div class="chart" id="chart5">
   <script>
-    var myChart4 = "Chart2RAW.json";
-    vegaEmbed('#chart4', myChart4);
+    var myChart5 = "Chart2RAW.json";
+    vegaEmbed('#chart5', myChart5);
   </script>
 </div>
     
@@ -93,11 +103,11 @@
     <p class="rubric-launch">I found the source of the data <a class="textLink" href="https://data.oecd.org/agroutput/meat-consumption.htm"> here</a>. and was able to download some data for countries that previously weren’t included; Peru, the Philippines and Russia. I then edited the data file in order to include these new countries.</p> 
     </div>
     
-<!--Chart 5 -->
-<div class="chart" id="chart5">
+<!--Chart 6 -->
+<div class="chart" id="chart6">
   <script>
-    var myChart5 = "meatconsumption.json";
-    vegaEmbed('#chart5', myChart5);
+    var myChart6 = "meatconsumption.json";
+    vegaEmbed('#chart6', myChart6);
   </script>
 </div>
 
@@ -107,30 +117,30 @@
     <p class="rubric-launch">For this chart I found data <a class="textLink" href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/coronavirusandhomeworkingintheuk/april2020"> here</a>. on home working rates in April 2020 by region. I then used these data points in a .json file to create the chart.</p> 
     </div>
     
-    <!--Chart 6 -->
-<div class="chart" id="chart6">
-  <script>
-    var myChart6 = "WorkingFromHome.json";
-    vegaEmbed('#chart6', myChart6);
-  </script>
-</div>
- 
-      <p>my seventh chart </p>
-        <!--Chart 7 -->
+    <!--Chart 7 -->
 <div class="chart" id="chart7">
   <script>
-    var myChart7 = "outputworker.json";
+    var myChart7 = "WorkingFromHome.json";
     vegaEmbed('#chart7', myChart7);
   </script>
 </div>
-    
+ 
       <p>my eighth chart </p>
-    
         <!--Chart 8 -->
 <div class="chart" id="chart8">
   <script>
-    var myChart8 = "outputhour.json";
+    var myChart8 = "outputworker.json";
     vegaEmbed('#chart8', myChart8);
+  </script>
+</div>
+    
+      <p>my ninth chart </p>
+    
+        <!--Chart 9 -->
+<div class="chart" id="chart9">
+  <script>
+    var myChart9 = "outputhour.json";
+    vegaEmbed('#chart9', myChart9);
   </script>
 </div>
     
