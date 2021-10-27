@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices Zoom over time.",
+  "data": {
+    "url": "https://api.stockdata.org/v1/data/eod?symbols=0A1O.L&api_token=ZX41AVFEOhYPK4l1M1S0V1pkjm1Vtnl7PZwyOeBD",
+    "format": {"type": "json", "property": "data"}
+  },
+  "title": {
+    "text": "Zoom Stock Price Time Series",
+    "subtitle": "The closing stock price of ZOOM VIDEO COMMUNICATIONS INC. Source: StockData.org",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "y": {"field": "close", "type": "quantitative", "title": "Value"},
+    "color": {}
+  }
+}
+
