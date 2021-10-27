@@ -1,63 +1,23 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
+  "title": {
       "text": "People Working From Home",
       "subtitle":"The percentage of people reported in each working from home status. Source: ONS, April 2020",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"},
-  "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+  "description": "Stock prices of 5 Tech Companies over Time.",
   "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/Homeworking.csv"},
   "transform": [{"filter": "datum.Category!=='IBM'"}],
   "height": 400,
-    "width": 300,
+  "width": 300,
+
+  "mark": "line",
   "encoding": {
     "x": {"field": "Year", "type": "temporal", "title": "Year"},
     "y": {"field": "WorkingFromHome", "type": "quantitative",
-     "title": "%", "scale": {"domain": [20, 46]}},
-    "color": {
-      "condition": {
-        "param": "hover",
-        "field":"Category",
-        "type":"nominal",
-        "legend": null
-      },
-      "value": "grey"
-    },
-    "opacity": {
-      "condition": {
-        "param": "hover",
-        "value": 1
-      },
-      "value": 0.2
-    }
-  },
-  "layer": [{
-    "description": "transparent layer to make it easier to trigger selection",
-    "params": [{
-      "name": "hover",
-      "value": [{"Category": "AAPL"}],
-      "select": {
-        "type": "point",
-        "fields": ["Category"],
-        "on": "mouseover"
-      }
-    }],
-    "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-  }, {
-    "mark": "line"
-  }, {
-    "encoding": {
-      "x": {"aggregate": "max", "field": "Year"},
-      "y": {"aggregate": {"argmax": "Year"}, "field": "WorkingFromHome"}
-    },
-    "layer": [{
-      "mark": {"type": "circle"}
-    }, {
-      "mark": {"type": "text", "align": "left", "dx": 10},
-      "encoding": {"text": {"field":"Category", "type": "nominal"}}
-    }]
-  }],
-  "config": {"view": {"stroke": null}}
+    "title": "%", "scale": {"domain": [20, 46]}},
+    "color": {"field": "Category", "type": "nominal"}
+  }
 }
