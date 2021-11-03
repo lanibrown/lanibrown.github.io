@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+    "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/observations.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+      "title": {
+    "text": "Nonfarm Business Sector: Labor Productivity (Output per Hour) for All Employed Persons",
+    "subtitle": "Percent Change at Annual Rate, Quarterly, Seasonally Adjusted. Source: FRED",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+    "width":600,
+    "height":350,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title":"Date"},
+    "y": {"field": "value", "type": "quantitative","scale": {"domain": [-20, 20]},"title":"Output per Hour"}
+  }
+}
