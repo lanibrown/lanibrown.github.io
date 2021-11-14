@@ -32,11 +32,11 @@
 
   <p>The aim of my project will be to examine the relationship between working from home and levels of labour productivity. Throughout the pandemic, many industries changed from being office-based to encouraging their workers to work from home. The changes in the level of people working from home can be seen below. </p>
     
-<!--Chart 10 -->
-  <div class="chart" id="chart10">
+<!--Chart 9 -->
+  <div class="chart" id="chart9">
       <script>
-        var myChart10 = "workingfromhomefreq.json";
-        vegaEmbed('#chart10', myChart10);
+        var myChart9 = "workingfromhomefreq.json";
+        vegaEmbed('#chart9', myChart9);
       </script>
   </div>
 
@@ -44,5 +44,38 @@
 
    <p>This being the case, I was curious to see whether the level of economy-wide productivity changed at all. It could have improved as the time spent commuting was reduced, or it may have decreased as there is unlikely to be the same moderation of work at home than there is in an office. Perhaps there will be no difference at all, as the proportion of those who are now working from home make up such a small proportion of the labour force as a whole it won’t change much. </p> 
     
+            <!--Chart 10 -->
+<div class="chart" id="chart10">
+  <script>
+    var myChart10 = "outputhour.json";
+    vegaEmbed('#chart10', myChart10);
+  </script>
+</div>
+    
+    
+               <!--Chart 11 -->
+<div class="chart" id="chart11">
+  <script>
+    var myChart11 = "fred1.json";
+    vegaEmbed('#chart11', myChart11);
+  </script>
+</div>
+    
+    
+<p> These charts are both taken from APIs, which consistently update the data. </p>
+    
+<p> A major issue with this project and analysing the data was that when looking at the direct productivity data, it is hard to say whether a dip in productivity over the period of the pandemic was caused by working from home, or people simply not working. In order to combat this, I have included countries such as New Zealand, who have published data regarding how many people were working from home and how many weren’t working at all due to restrictions. I have also attempted to focus on the time periods where the furlough scheme wasn’t in place, as well as look at a country similar in demographic to the UK but that didn’t offer as extensive a furlough scheme in order to hopefully gauge the isolated impact of working from home. </p>
+
+               <!--Chart 12 -->
+<div class="chart" id="chart12">
+  <script>
+    var myChart12 = "3countrycomparison.json";
+    vegaEmbed('#chart12', myChart12);
+  </script>
+</div>
+
+<p>It is difficult to know the success of these attempts. Due to this, I also included data from a survey of people analysing their own productivity when working from home and not.</p>
+
+
 </body>
 </html>
