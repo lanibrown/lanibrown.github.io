@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Productivity",
+    "subtitle":"",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+    "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/Labour%20Productivity%20Forecast.csv",
+    "format": {"type": "csv"}
+  },
+
+   "transform":[
+      
+      {"filter": {
+        "field": "LOCATION", 
+        "oneOf": ["NZL", "GBR", "USA"]}
+        }
+
+
+    ],
+  
+  
+  "height": 300,
+  "width": 500,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": { 
+      "field": "TIME",
+      "type": "nominal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false},
+      "scale": { "domain":[0.6,1.4]}
+    },
+
+    "color": {
+      "field": "LOCATION",
+      "type": "nominal",
+      "scale": {"scheme": "set2"},
+      "title": "Legend",
+      "legend": {
+        "orient": "bottom-right", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
