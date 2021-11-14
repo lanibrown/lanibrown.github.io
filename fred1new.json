@@ -4,6 +4,10 @@
     "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/observations.json",
     "format": {"type": "json", "property": "observations"}
   },
+    "transform": [{
+    "filter": {"field": "date", "range": [946684800000, 1617235200000]}
+      }],
+
       "title": {
     "text": "Nonfarm Business Sector: Labor Productivity (Output per Hour) for All Employed Persons",
     "subtitle": "Percent Change at Annual Rate, Quarterly, Seasonally Adjusted. Source: FRED",
@@ -13,11 +17,11 @@
     "color": "black"
   },
 
-    "width":600,
+    "width":500,
     "height":350,
   "mark": "line",
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "title":"Date"},
+    "x": {"field": "date", "type": "temporal", "title":"Date","scale": {"domain": [946684800000, 1617235200000]}},
     "y": {"field": "value", "type": "quantitative","scale": {"domain": [-20, 20]},"title":"Output per Hour"}
   }
 }
