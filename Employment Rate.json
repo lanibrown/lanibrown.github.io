@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+  "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/Employment%20Data.csv"},
+   "title": {
+    "text": "Employment Rate",
+    "subtitle":"The employment rate (%) of the USA, New Zealand and the UK by date. Source: OECD",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "encoding": {
+    "x": {"field": "TIME", "type": "nominal", "title": "Date"},
+    "y": {"field": "Value", "scale": {"domain": [50,80]}, "type": "quantitative", "title": "Employment Rate"},
+    "color": {
+      "condition": {
+        "param": "hover",
+        "field":"LOCATION",
+        "type":"nominal",
+        "legend": null
+      },
+      "value": "grey"
+    },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "value": 1
+      },
+      "value": 0.2
+    }
+  },
+  "layer": [{
+    "description": "transparent layer to make it easier to trigger selection",
+    "params": [{
+      "name": "hover",
+      "value": [{"LOCATION": "AAPL"}],
+      "select": {
+        "type": "point",
+        "fields": ["LOCATION"],
+        "on": "mouseover"
+      }
+    }],
+    "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+  }, {
+    "mark": "line"
+  }, {
+    "encoding": {
+      "x": {"aggregate": "max", "field": "TIME"},
+      "y": {"aggregate": {"argmax": "TIME"}, "field": "Value"}
+    },
+    "layer": [{
+      "mark": {"type": "circle"}
+    }, {
+      "mark": {"type": "text", "align": "left", "dx": 4},
+      "encoding": {"text": {"field":"LOCATION", "type": "nominal"}}
+    }]
+  }],
+  "config": {"view": {"stroke": null}}
+}
