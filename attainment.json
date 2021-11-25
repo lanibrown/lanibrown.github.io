@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": {
+    "text": "Attainment of UK Pupils",
+    "subtitle": "The average attainment of UK primary school pupils divided by whether or not they were eligible for free school meals. Source: Department for Education.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/educationdata.csv"},
+  "width": 500,
+  "height": 150,
+  "transform": [
+    {
+      "filter": {
+        "field": "Year Group",
+        "oneOf": ["Year 3", "Year 4", "Year 5", "Year 6"]
+      }
+    },
+    {
+      "filter": {
+        "field": "Category",
+        "oneOf": ["Non-FSM Ever 6", "FSM Ever 6", "All pupils"]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Attainment",
+      "type": "quantitative",
+      "aggregate": "mean",
+      "scale": {"domain": [520,620]},
+      "title": "Attainment"
+    },
+    "y": {
+      "field": "Category",
+      "type": "nominal",
+      "title": "Category",
+      "axis": {
+        "offset": 5,
+        "ticks": false,
+        "minExtent": 70,
+        "domain": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "detail": {
+          "field": "Category",
+          "type": "nominal"
+        },
+        "color": {"value": "#db646f"}
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "Year",
+          "type": "ordinal",
+          "scale": {
+            "range": ["#e6959c", "#911a24"]
+          },
+          "title": "Year"
+        },
+        "size": {"value": 100},
+        "opacity": {"value": 1}
+      }
+    }
+  ]
+}
