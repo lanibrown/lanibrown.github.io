@@ -18,8 +18,7 @@
       "condition": {
         "param": "hover",
         "field":"LOCATION",
-        "type":"nominal",
-        "legend": null
+        "type":"nominal"
       },
       "value": "grey"
     },
