@@ -37,6 +37,8 @@
 
     <h2> Chart Portfolio: </h2>
     
+        <h2>2. Embedding</h2>
+    
   <h3>COVID cases UK</h3>
 
   <p>This is an interactive chart showing COVID cases in the UK by different regions. </p>
@@ -73,6 +75,8 @@
       </script>
   </div>
     
+    <h2>3. Hosting</h2>
+    
   <h3>New COVID Cases Comparison 1</h3>
 
   <p>The first of two charts, this chart compares three areas with relatively low new COVID cases. </p>
@@ -96,6 +100,8 @@
     vegaEmbed('#chart5', myChart5);
   </script>
 </div>
+    
+    <h2>4. Editing data and writing JSON by hand</h2>
     
   <h3>Meat Consumption by Type and Country</h3>
 
@@ -129,6 +135,8 @@
   </script>
 </div>
  
+        <h2>5. API Dtiven Charts</h2>
+    
     <h3>Zoom Stock API</h3>
     
       <p>This is the first example of an embedded chart coming from an API. This one is from StockData.org.</p>
@@ -153,14 +161,14 @@
 </div>
     
     
-        <h3>Using Loops</h3>
+        <h2>6. Using Loops</h2>
     
       <p>These four graphs are sourced from FRED APIs and were downloaded using JavaScript loops. </p>
     
             <!--Chart 10 -->
 <div class="chart" id="chart10">
   <script>
-    var myChart10 = "fred1.json";
+    var myChart10 = "fred1new.json";
     vegaEmbed('#chart10', myChart10);
   </script>
 </div>
@@ -189,7 +197,7 @@
   </script>
 </div>
     
-    <h2>Scraping</h2>
+    <h2>7. Scraping</h2>
     <p> This chart on country productivity was made by scraping data from tradingeconomics.com</p>
     
                 <!--Chart 14 -->
@@ -200,7 +208,7 @@
   </script>
 </div>
     
-        <h2>Talking Economics</h2>
+        <h2>8. Data Stories</h2>
     <p> In the Talking Economics event regarding the "COVID Generation", it was stated by Anna that disadvantaged children suffered the worst from online learning and have had the biggest attainment gap. I tested this by using data from the Department of Education on attainment of primary school pupils and divided this by whether a child was a recipient of free school meals. As shown, there is indeed a bigger attainment gap for disadvantaged pupils compared to those who don't receive free school meals.</p>
     
                 <!--Chart 15 -->
@@ -208,6 +216,19 @@
   <script>
     var myChart15 = "attainment.json";
     vegaEmbed('#chart15', myChart15);
+  </script>
+</div>
+    
+    <h2>9. Advanced Analytics</h2>
+    
+    <h2>10. Interactivity</h2>
+    <p> This interactive chart shows a comparison of the employment rate for New Zealand, the US and the UK. I chose my interactive element to be hover based, so when you hover over a line the others grey out so you can focus more clearly on each one.</p>
+    
+                    <!--Chart 17 -->
+<div class="chart" id="chart17">
+  <script>
+    var myChart17 = "EmploymentRate.json";
+    vegaEmbed('#chart17', myChart17);
   </script>
 </div>
     
