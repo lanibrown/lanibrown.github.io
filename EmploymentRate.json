@@ -56,6 +56,5 @@
       "mark": {"type": "text", "align": "left", "dx": 4},
       "encoding": {"text": {"field":"LOCATION", "type": "nominal"}}
     }]
-  }],
-  "config": {"view": {"stroke": null}}
+  }]
 }
