@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/JP9Z/dataset/unem/data",
+    "format": {"type": "json", "property": "months"}
+  },
+  "title": {
+    "text": "UK Job Vacancies",
+    "subtitle":"UK job vacancies (thousands). Source: ONS",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "mark": "line",
+  "transform": [
+    {"filter": "datum.year>2018"}
+  ],
+  "encoding": {
+    "x": {"field": "date", "type": "nominal", "title": "Month", "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]},
+    "y": {"field": "value", "type": "quantitative", "scale": {"domain": [0,1200]}, "title": "Vacancies"}
+  }
+}
