@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": { "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/PEW%20Research%20WFH.csv"},
+  "width": {"step": 30},
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Category", "type": "ordinal", "spacing": 10,
+      "header": {"orient": "bottom"}
+    },
+    "y": {
+      "aggregate": "sum", "field": "Number",
+      "title": "Percentage",
+      "axis": {"grid": false}
+    },
+    "x": {
+      "field": "Year",
+      "title": "Category",
+      "axis": null
+    },
+    "color": {
+      "field": "Year",
+      "scale": {"range": ["blue", "red"]}
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"domainWidth": 1}
+  }
+}
