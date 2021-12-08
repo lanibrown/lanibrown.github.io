@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": { "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/PEW%20Research%20Productivity.csv"
+  },
+  "width": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Productivity Level", "type": "nominal", "axis": {"labelAngle": 0}},
+    "y": {"field": "Percentage", "type": "quantitative", "scale":{ "domain":[0,100]}, "axis": {"tickCount": 10}}
+  }
+}
