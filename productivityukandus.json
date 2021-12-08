@@ -8,8 +8,8 @@
     "height":350,
     
     "title": {
-      "text": "Labor Productivity (Output per Hour) for All Employed Persons",
-      "subtitle":"Percent Change at Annual Rate, Quarterly, Seasonally Adjusted. US Source: FRED, UK Source: ONS",
+      "text": "Output per Hour for All Employed Persons",
+      "subtitle":"Percent Change at Annual Rate, Seasonally Adjusted. US Source: FRED, UK Source: ONS",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -18,8 +18,8 @@
 
     "encoding": {
       "x": {"field": "date3", "type": "temporal", "title": null, "axis": {"grid": false}},
-      "y": {"field": "value", "type": "quantitative", "title": null, "axis": {"grid": false}},
-      "color":{"field":"sourceDataset", "title":"Legend", "legend":{"orient": "top-right", "labelExpr": "datum.label == 'undefined' ? 'US' :datum.label == 'video' ? 'PRDY' : 'UK'"}}
+      "y": {"field": "value", "type": "quantitative", "title": null, "axis": {"grid": true}},
+      "color":{"field":"sourceDataset", "title":"Legend", "legend":{"orient": "top-right", "labelExpr": "datum.label == 'undefined' ? 'US' :datum.label == 'PRDY' ? 'UK' : 'UK'"}}
     },
 
     "layer": [
@@ -34,7 +34,7 @@
     {"calculate": "substring(datum.quarter,1)*3-1", "as": "quarter_n"},
     {"calculate": "join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
     {"calculate": "timeParse(datum.date2, '%Y-%m')", "as": "date3"},
-    {"filter": {"field": "year", "range": [2000, 2021]}}
+    {"filter": {"field": "year", "range": [2018, 2021]}}
   ],
 "title": {
 "text": "Output per Hour Worked Time Series",
@@ -54,7 +54,7 @@
        "format": {"type": "json", "property": "observations"}
   },
     "transform": [{
-    "filter": {"field": "date", "range": [946684800000, 1617235200000]}
+    "filter": {"field": "date", "range": [1514764800000, 1617235200000]}
       }],
 
       "title": {
@@ -67,7 +67,7 @@
   },
 "mark": {"type": "line", "color": "#001aff"},
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "title":"Date","scale": {"domain": [946684800000, 1617235200000]}},
+    "x": {"field": "date", "type": "temporal", "title":"Date","scale": {"domain": [1514764800000, 1619835200000]}},
     "y": {"field": "value", "type": "quantitative","scale": {"domain": [-10,15]},"title":"Output per Hour"}
   }
       }
