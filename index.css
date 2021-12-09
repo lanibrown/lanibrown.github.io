@@ -23,6 +23,7 @@ h1, h3, p{
     border-radius: 5px;
     border-color: white;
     text-align: center;
+    margin: auto;
 }
 
 .dashboardButton{
