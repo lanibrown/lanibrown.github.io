@@ -25,7 +25,7 @@ h1, h3, p{
     text-align: center;
 }
 
-.button {
+.dashboardButton {
   background-color: #33A8FF;
   border: none;
   color: white;
