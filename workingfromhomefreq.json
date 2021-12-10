@@ -9,7 +9,7 @@
       "color": "black"},
   "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/Homeworking.csv"},
   "height": 400,
-  "width": {"step": 11},
+  "width": 70,
   "mark": "bar",
   "encoding": {
     "column": {
