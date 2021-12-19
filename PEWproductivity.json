@@ -1,12 +1,32 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
-  "data": { "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/PEW%20Research%20Productivity.csv"
+  "data": {
+    "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/PEW%20Research%20Productivity.csv"
   },
-  "width": 300,
+  "title": {
+    "text": "Self Reported Productivity in the US(%)",
+    "subtitle": ["The self reported producivity of employed people working from", "home in the USA (%) Source: PEW Research Centre"],
+    "subtitleFontStyle": "italic",
+    "baseline": "middle",
+    "subtitleFontSize": 10,
+    "limit": 300,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 200,
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Productivity Level", "type": "nominal", "axis": {"labelAngle": 0}},
-    "y": {"field": "Percentage", "type": "quantitative", "scale":{ "domain":[0,100]}, "axis": {"tickCount": 10}}
+    "x": {
+      "field": "Productivity Level",
+      "type": "nominal",
+      "axis": {"labelAngle": 20}
+    },
+    "y": {
+      "field": "Percentage",
+      "type": "quantitative",
+      "scale": {"domain": [0, 100]},
+      "axis": {"tickCount": 10}
+    }
   }
 }
