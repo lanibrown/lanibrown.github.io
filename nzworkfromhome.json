@@ -16,7 +16,7 @@
     "encoding": {
       "x": {"field": "COVID-19 alert level", "title": ""},
       "y": {"field": {"repeat": "repeat"}, "type": "quantitative"},
-      "color": {"field": "COVID-19 alert level"}
+      "color": {"field": "COVID-19 alert level", "scale": {"scheme": "tealblues"}}
     }
   }
 }
