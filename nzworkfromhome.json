@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "People Working From Home New Zealand (%) in June 2020",
+    "subtitle": "The percentage of people reported in each working from home status in NZ in the month of June 2020. Source: stats.govt.nz",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "repeat": ["Worked at home", "Worked outside of home", "Did not work during reference week"],
+  "columns": 3,
+  "spec": {
+    "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/nzworkfromhome.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "COVID-19 alert level", "title": ""},
+      "y": {"field": {"repeat": "repeat"}, "type": "quantitative"},
+      "color": {"field": "COVID-19 alert level"}
+    }
+  }
+}
