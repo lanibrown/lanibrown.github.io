@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Productivity",
+    "text": "Percentage change in Productivity",
     "subtitle": "The percentage change in producivity of the USA, New Zealand and the UK by date. Source: OECD",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -17,7 +17,7 @@
     {"filter": {"field": "TIME", "oneOf": ["2017-Q1", "2017-Q2", "2017-Q3", "2017-Q4", "2018-Q1", "2018-Q2", "2018-Q3", "2018-Q4","2019-Q1", "2019-Q2", "2019-Q3", "2019-Q4","2020-Q1", "2020-Q2", "2020-Q3", "2020-Q4","2021-Q1", "2021-Q2", "2021-Q3", "2021-Q4"]}}
   ],
   "height": 300,
-  "width": 500,
+  "width": 400,
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {"field": "TIME", "type": "nominal", "title": "Date"},
@@ -54,7 +54,7 @@
       "layer": [
         {"mark": {"type": "circle"}},
         {
-          "mark": {"type": "text", "align": "left", "dx": 4},
+          "mark": {"type": "text", "align": "left", "dx": 6},
           "encoding": {"text": {"field": "LOCATION", "type": "nominal"}}
         }
       ]
