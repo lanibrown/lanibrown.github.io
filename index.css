@@ -23,9 +23,7 @@ h1, h3, p{
     border-radius: 5px;
     border-color: white;
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .dashboardButton{
@@ -36,3 +34,16 @@ h1, h3, p{
   font-family: 'Raleway', sans-serif;
 }
 
+.button {
+  background: #483D8B;
+  border-radius: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
