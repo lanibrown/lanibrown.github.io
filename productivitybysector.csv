@@ -1,0 +1,379 @@
+﻿Year,Title,Category,Value
+2017 Q1,Whole Economy,Whole Economy,98.3
+2017 Q2,Whole Economy,Whole Economy,98.1
+2017 Q3,Whole Economy,Whole Economy,99.5
+2017 Q4,Whole Economy,Whole Economy,99.6
+2018 Q1,Whole Economy,Whole Economy,99.1
+2018 Q2,Whole Economy,Whole Economy,99.6
+2018 Q3,Whole Economy,Whole Economy,99.5
+2018 Q4,Whole Economy,Whole Economy,100.1
+2019 Q1,Whole Economy,Whole Economy,99.6
+2019 Q2,Whole Economy,Whole Economy,99.8
+2019 Q3,Whole Economy,Whole Economy,100.2
+2019 Q4,Whole Economy,Whole Economy,100.4
+2020 Q1,Whole Economy,Whole Economy,99.4
+2020 Q2,Whole Economy,Whole Economy,97.5
+2020 Q3,Whole Economy,Whole Economy,105.5
+2020 Q4,Whole Economy,Whole Economy,101
+2021 Q1,Whole Economy,Whole Economy,101.6
+2021 Q2,Whole Economy,Whole Economy,101.7
+2017 Q1,"Agriculture, forestry and fishing",Agriculture,107.7
+2017 Q2,"Agriculture, forestry and fishing",Agriculture,102.6
+2017 Q3,"Agriculture, forestry and fishing",Agriculture,87
+2017 Q4,"Agriculture, forestry and fishing",Agriculture,70
+2018 Q1,"Agriculture, forestry and fishing",Agriculture,77.3
+2018 Q2,"Agriculture, forestry and fishing",Agriculture,86.1
+2018 Q3,"Agriculture, forestry and fishing",Agriculture,89.8
+2018 Q4,"Agriculture, forestry and fishing",Agriculture,84.4
+2019 Q1,"Agriculture, forestry and fishing",Agriculture,91.6
+2019 Q2,"Agriculture, forestry and fishing",Agriculture,94
+2019 Q3,"Agriculture, forestry and fishing",Agriculture,103.8
+2019 Q4,"Agriculture, forestry and fishing",Agriculture,110.6
+2020 Q1,"Agriculture, forestry and fishing",Agriculture,102.2
+2020 Q2,"Agriculture, forestry and fishing",Agriculture,86
+2020 Q3,"Agriculture, forestry and fishing",Agriculture,91.3
+2020 Q4,"Agriculture, forestry and fishing",Agriculture,97.4
+2021 Q1,"Agriculture, forestry and fishing",Agriculture,95.6
+2021 Q2,"Agriculture, forestry and fishing",Agriculture,102.5
+2017 Q1,"Manufacture of food products, beverages and tobacco",Manufacturing,89.1
+2017 Q2,"Manufacture of food products, beverages and tobacco",Manufacturing,89.5
+2017 Q3,"Manufacture of food products, beverages and tobacco",Manufacturing,88.8
+2017 Q4,"Manufacture of food products, beverages and tobacco",Manufacturing,89.8
+2018 Q1,"Manufacture of food products, beverages and tobacco",Manufacturing,94.3
+2018 Q2,"Manufacture of food products, beverages and tobacco",Manufacturing,97.5
+2018 Q3,"Manufacture of food products, beverages and tobacco",Manufacturing,100.1
+2018 Q4,"Manufacture of food products, beverages and tobacco",Manufacturing,101.9
+2019 Q1,"Manufacture of food products, beverages and tobacco",Manufacturing,100.6
+2019 Q2,"Manufacture of food products, beverages and tobacco",Manufacturing,96.6
+2019 Q3,"Manufacture of food products, beverages and tobacco",Manufacturing,97
+2019 Q4,"Manufacture of food products, beverages and tobacco",Manufacturing,105.8
+2020 Q1,"Manufacture of food products, beverages and tobacco",Manufacturing,104.9
+2020 Q2,"Manufacture of food products, beverages and tobacco",Manufacturing,104.7
+2020 Q3,"Manufacture of food products, beverages and tobacco",Manufacturing,108.5
+2020 Q4,"Manufacture of food products, beverages and tobacco",Manufacturing,103.7
+2021 Q1,"Manufacture of food products, beverages and tobacco",Manufacturing,107
+2021 Q2,"Manufacture of food products, beverages and tobacco",Manufacturing,106.1
+2017 Q1,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,84
+2017 Q2,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,86.7
+2017 Q3,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,88.4
+2017 Q4,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,93.7
+2018 Q1,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,89.9
+2018 Q2,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,93.5
+2018 Q3,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,102
+2018 Q4,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,102.2
+2019 Q1,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,99
+2019 Q2,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,101.3
+2019 Q3,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,100.5
+2019 Q4,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,99.2
+2020 Q1,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,92.5
+2020 Q2,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,72.2
+2020 Q3,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,136
+2020 Q4,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,121.1
+2021 Q1,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,116.1
+2021 Q2,"Manufacture of textiles, wearing apparel and leather products",Manufacturing,127.9
+2017 Q1,"Manufacture of wood and paper products, and printing",Manufacturing,89.9
+2017 Q2,"Manufacture of wood and paper products, and printing",Manufacturing,86.6
+2017 Q3,"Manufacture of wood and paper products, and printing",Manufacturing,88.2
+2017 Q4,"Manufacture of wood and paper products, and printing",Manufacturing,89.9
+2018 Q1,"Manufacture of wood and paper products, and printing",Manufacturing,87.4
+2018 Q2,"Manufacture of wood and paper products, and printing",Manufacturing,91.8
+2018 Q3,"Manufacture of wood and paper products, and printing",Manufacturing,90.9
+2018 Q4,"Manufacture of wood and paper products, and printing",Manufacturing,94.3
+2019 Q1,"Manufacture of wood and paper products, and printing",Manufacturing,97.7
+2019 Q2,"Manufacture of wood and paper products, and printing",Manufacturing,101.3
+2019 Q3,"Manufacture of wood and paper products, and printing",Manufacturing,99.1
+2019 Q4,"Manufacture of wood and paper products, and printing",Manufacturing,101.8
+2020 Q1,"Manufacture of wood and paper products, and printing",Manufacturing,102.8
+2020 Q2,"Manufacture of wood and paper products, and printing",Manufacturing,106.3
+2020 Q3,"Manufacture of wood and paper products, and printing",Manufacturing,129.6
+2020 Q4,"Manufacture of wood and paper products, and printing",Manufacturing,115.5
+2021 Q1,"Manufacture of wood and paper products, and printing",Manufacturing,109.4
+2021 Q2,"Manufacture of wood and paper products, and printing",Manufacturing,109.6
+2017 Q1,"Manufacture of coke, and refined petroleum products",Manufacturing,164.9
+2017 Q2,"Manufacture of coke, and refined petroleum products",Manufacturing,123
+2017 Q3,"Manufacture of coke, and refined petroleum products",Manufacturing,106.7
+2017 Q4,"Manufacture of coke, and refined petroleum products",Manufacturing,84.8
+2018 Q1,"Manufacture of coke, and refined petroleum products",Manufacturing,77.8
+2018 Q2,"Manufacture of coke, and refined petroleum products",Manufacturing,85.3
+2018 Q3,"Manufacture of coke, and refined petroleum products",Manufacturing,78.6
+2018 Q4,"Manufacture of coke, and refined petroleum products",Manufacturing,76.8
+2019 Q1,"Manufacture of coke, and refined petroleum products",Manufacturing,84.3
+2019 Q2,"Manufacture of coke, and refined petroleum products",Manufacturing,92.9
+2019 Q3,"Manufacture of coke, and refined petroleum products",Manufacturing,97.1
+2019 Q4,"Manufacture of coke, and refined petroleum products",Manufacturing,125.7
+2020 Q1,"Manufacture of coke, and refined petroleum products",Manufacturing,150.5
+2020 Q2,"Manufacture of coke, and refined petroleum products",Manufacturing,101.2
+2020 Q3,"Manufacture of coke, and refined petroleum products",Manufacturing,86.5
+2020 Q4,"Manufacture of coke, and refined petroleum products",Manufacturing,88
+2021 Q1,"Manufacture of coke, and refined petroleum products",Manufacturing,78.5
+2021 Q2,"Manufacture of coke, and refined petroleum products",Manufacturing,93.8
+2017 Q1,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,89.8
+2017 Q2,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,92.6
+2017 Q3,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,96.1
+2017 Q4,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,100.9
+2018 Q1,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,103.7
+2018 Q2,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,112.1
+2018 Q3,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,103.6
+2018 Q4,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,102.2
+2019 Q1,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,112.4
+2019 Q2,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,99.8
+2019 Q3,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,94.2
+2019 Q4,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,93.6
+2020 Q1,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,104.8
+2020 Q2,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,113.2
+2020 Q3,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,118.4
+2020 Q4,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,101.4
+2021 Q1,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,110.5
+2021 Q2,Manufacture of basic pharmaceutical products and pharmaceutical preparations,Healthcare,104.1
+2017 Q1,"Electricity, gas, steam and air conditioning supply",Utilities,85.6
+2017 Q2,"Electricity, gas, steam and air conditioning supply",Utilities,83.6
+2017 Q3,"Electricity, gas, steam and air conditioning supply",Utilities,94.4
+2017 Q4,"Electricity, gas, steam and air conditioning supply",Utilities,85.8
+2018 Q1,"Electricity, gas, steam and air conditioning supply",Utilities,90
+2018 Q2,"Electricity, gas, steam and air conditioning supply",Utilities,82.8
+2018 Q3,"Electricity, gas, steam and air conditioning supply",Utilities,83.4
+2018 Q4,"Electricity, gas, steam and air conditioning supply",Utilities,85.5
+2019 Q1,"Electricity, gas, steam and air conditioning supply",Utilities,90.6
+2019 Q2,"Electricity, gas, steam and air conditioning supply",Utilities,97.7
+2019 Q3,"Electricity, gas, steam and air conditioning supply",Utilities,101.7
+2019 Q4,"Electricity, gas, steam and air conditioning supply",Utilities,110
+2020 Q1,"Electricity, gas, steam and air conditioning supply",Utilities,108.8
+2020 Q2,"Electricity, gas, steam and air conditioning supply",Utilities,100.4
+2020 Q3,"Electricity, gas, steam and air conditioning supply",Utilities,108.5
+2020 Q4,"Electricity, gas, steam and air conditioning supply",Utilities,99.9
+2021 Q1,"Electricity, gas, steam and air conditioning supply",Utilities,104.7
+2021 Q2,"Electricity, gas, steam and air conditioning supply",Utilities,107.7
+2017 Q1,Construction of buildings,Manufacturing,110.5
+2017 Q2,Construction of buildings,Manufacturing,107.3
+2017 Q3,Construction of buildings,Manufacturing,106.7
+2017 Q4,Construction of buildings,Manufacturing,106.3
+2018 Q1,Construction of buildings,Manufacturing,104.8
+2018 Q2,Construction of buildings,Manufacturing,106.7
+2018 Q3,Construction of buildings,Manufacturing,105.7
+2018 Q4,Construction of buildings,Manufacturing,103.6
+2019 Q1,Construction of buildings,Manufacturing,101
+2019 Q2,Construction of buildings,Manufacturing,103.1
+2019 Q3,Construction of buildings,Manufacturing,99.6
+2019 Q4,Construction of buildings,Manufacturing,96.3
+2020 Q1,Construction of buildings,Manufacturing,95.7
+2020 Q2,Construction of buildings,Manufacturing,81.6
+2020 Q3,Construction of buildings,Manufacturing,109.4
+2020 Q4,Construction of buildings,Manufacturing,99.3
+2021 Q1,Construction of buildings,Manufacturing,106.4
+2021 Q2,Construction of buildings,Manufacturing,107
+2017 Q1,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,96.7
+2017 Q2,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,96.6
+2017 Q3,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,97.7
+2017 Q4,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,96.1
+2018 Q1,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,97.2
+2018 Q2,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,99.3
+2018 Q3,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,100.3
+2018 Q4,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,101.1
+2019 Q1,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,100.3
+2019 Q2,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,101.1
+2019 Q3,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,100.2
+2019 Q4,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,98.3
+2020 Q1,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,98.2
+2020 Q2,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,109.4
+2020 Q3,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,119.5
+2020 Q4,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,113.2
+2021 Q1,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,108.3
+2021 Q2,"Retail trade, except of motor vehicles and motorcycles",Retail/Hospitality,112.3
+2017 Q1,Food and beverage service activities,Retail/Hospitality,102.6
+2017 Q2,Food and beverage service activities,Retail/Hospitality,102.2
+2017 Q3,Food and beverage service activities,Retail/Hospitality,104.4
+2017 Q4,Food and beverage service activities,Retail/Hospitality,101.4
+2018 Q1,Food and beverage service activities,Retail/Hospitality,102.2
+2018 Q2,Food and beverage service activities,Retail/Hospitality,101.6
+2018 Q3,Food and beverage service activities,Retail/Hospitality,96.7
+2018 Q4,Food and beverage service activities,Retail/Hospitality,99.8
+2019 Q1,Food and beverage service activities,Retail/Hospitality,97.7
+2019 Q2,Food and beverage service activities,Retail/Hospitality,100.1
+2019 Q3,Food and beverage service activities,Retail/Hospitality,100.1
+2019 Q4,Food and beverage service activities,Retail/Hospitality,102.1
+2020 Q1,Food and beverage service activities,Retail/Hospitality,99
+2020 Q2,Food and beverage service activities,Retail/Hospitality,38.1
+2020 Q3,Food and beverage service activities,Retail/Hospitality,128.2
+2020 Q4,Food and beverage service activities,Retail/Hospitality,88.7
+2021 Q1,Food and beverage service activities,Retail/Hospitality,92.5
+2021 Q2,Food and beverage service activities,Retail/Hospitality,116
+2017 Q1,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,95
+2017 Q2,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,97.7
+2017 Q3,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,98.5
+2017 Q4,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,109.1
+2018 Q1,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,106.9
+2018 Q2,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,103.4
+2018 Q3,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,113.7
+2018 Q4,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,112.3
+2019 Q1,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,113.5
+2019 Q2,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,107.9
+2019 Q3,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,87.6
+2019 Q4,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,91
+2020 Q1,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,94.3
+2020 Q2,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,89.4
+2020 Q3,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,85.8
+2020 Q4,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,93.5
+2021 Q1,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,95.5
+2021 Q2,"Motion picture, video & TV programme production, sound recording & music publishing activities",Retail/Hospitality,88.2
+2017 Q1,"Computer programming, consultancy and related activities",Services,91.3
+2017 Q2,"Computer programming, consultancy and related activities",Services,92.2
+2017 Q3,"Computer programming, consultancy and related activities",Services,93.9
+2017 Q4,"Computer programming, consultancy and related activities",Services,93.8
+2018 Q1,"Computer programming, consultancy and related activities",Services,94.9
+2018 Q2,"Computer programming, consultancy and related activities",Services,96.7
+2018 Q3,"Computer programming, consultancy and related activities",Services,96.1
+2018 Q4,"Computer programming, consultancy and related activities",Services,98.9
+2019 Q1,"Computer programming, consultancy and related activities",Services,99.7
+2019 Q2,"Computer programming, consultancy and related activities",Services,100.6
+2019 Q3,"Computer programming, consultancy and related activities",Services,100.7
+2019 Q4,"Computer programming, consultancy and related activities",Services,99
+2020 Q1,"Computer programming, consultancy and related activities",Services,100.6
+2020 Q2,"Computer programming, consultancy and related activities",Services,94.3
+2020 Q3,"Computer programming, consultancy and related activities",Services,101
+2020 Q4,"Computer programming, consultancy and related activities",Services,95.8
+2021 Q1,"Computer programming, consultancy and related activities",Services,104.4
+2021 Q2,"Computer programming, consultancy and related activities",Services,107.7
+2017 Q1,Information service activities,Services,110.9
+2017 Q2,Information service activities,Services,104.7
+2017 Q3,Information service activities,Services,106.7
+2017 Q4,Information service activities,Services,118.4
+2018 Q1,Information service activities,Services,114.3
+2018 Q2,Information service activities,Services,116.2
+2018 Q3,Information service activities,Services,108.1
+2018 Q4,Information service activities,Services,104.1
+2019 Q1,Information service activities,Services,113.8
+2019 Q2,Information service activities,Services,102.3
+2019 Q3,Information service activities,Services,99.1
+2019 Q4,Information service activities,Services,84.8
+2020 Q1,Information service activities,Services,70.6
+2020 Q2,Information service activities,Services,83.1
+2020 Q3,Information service activities,Services,74.9
+2020 Q4,Information service activities,Services,71.2
+2021 Q1,Information service activities,Services,65.8
+2021 Q2,Information service activities,Services,83.6
+2017 Q1,"Financial service activities, except insurance and pension funding",Services,115.6
+2017 Q2,"Financial service activities, except insurance and pension funding",Services,113.5
+2017 Q3,"Financial service activities, except insurance and pension funding",Services,112.7
+2017 Q4,"Financial service activities, except insurance and pension funding",Services,109.8
+2018 Q1,"Financial service activities, except insurance and pension funding",Services,107.5
+2018 Q2,"Financial service activities, except insurance and pension funding",Services,105.5
+2018 Q3,"Financial service activities, except insurance and pension funding",Services,104.1
+2018 Q4,"Financial service activities, except insurance and pension funding",Services,103.5
+2019 Q1,"Financial service activities, except insurance and pension funding",Services,101
+2019 Q2,"Financial service activities, except insurance and pension funding",Services,99
+2019 Q3,"Financial service activities, except insurance and pension funding",Services,101
+2019 Q4,"Financial service activities, except insurance and pension funding",Services,99
+2020 Q1,"Financial service activities, except insurance and pension funding",Services,98.5
+2020 Q2,"Financial service activities, except insurance and pension funding",Services,89.2
+2020 Q3,"Financial service activities, except insurance and pension funding",Services,89.9
+2020 Q4,"Financial service activities, except insurance and pension funding",Services,93.6
+2021 Q1,"Financial service activities, except insurance and pension funding",Services,93.6
+2021 Q2,"Financial service activities, except insurance and pension funding",Services,91.9
+2017 Q1,"Insurance, reinsurance and pension funding, except compulsory social security",Services,102.1
+2017 Q2,"Insurance, reinsurance and pension funding, except compulsory social security",Services,102.1
+2017 Q3,"Insurance, reinsurance and pension funding, except compulsory social security",Services,112.4
+2017 Q4,"Insurance, reinsurance and pension funding, except compulsory social security",Services,116.5
+2018 Q1,"Insurance, reinsurance and pension funding, except compulsory social security",Services,101.7
+2018 Q2,"Insurance, reinsurance and pension funding, except compulsory social security",Services,103.5
+2018 Q3,"Insurance, reinsurance and pension funding, except compulsory social security",Services,109.8
+2018 Q4,"Insurance, reinsurance and pension funding, except compulsory social security",Services,113.8
+2019 Q1,"Insurance, reinsurance and pension funding, except compulsory social security",Services,100.7
+2019 Q2,"Insurance, reinsurance and pension funding, except compulsory social security",Services,101.4
+2019 Q3,"Insurance, reinsurance and pension funding, except compulsory social security",Services,99.3
+2019 Q4,"Insurance, reinsurance and pension funding, except compulsory social security",Services,98.6
+2020 Q1,"Insurance, reinsurance and pension funding, except compulsory social security",Services,103.3
+2020 Q2,"Insurance, reinsurance and pension funding, except compulsory social security",Services,101.1
+2020 Q3,"Insurance, reinsurance and pension funding, except compulsory social security",Services,93
+2020 Q4,"Insurance, reinsurance and pension funding, except compulsory social security",Services,92.8
+2021 Q1,"Insurance, reinsurance and pension funding, except compulsory social security",Services,98.7
+2021 Q2,"Insurance, reinsurance and pension funding, except compulsory social security",Services,97.7
+2017 Q1,Legal and accounting activities,Services,108.3
+2017 Q2,Legal and accounting activities,Services,107.1
+2017 Q3,Legal and accounting activities,Services,108.4
+2017 Q4,Legal and accounting activities,Services,105.7
+2018 Q1,Legal and accounting activities,Services,108.2
+2018 Q2,Legal and accounting activities,Services,106.7
+2018 Q3,Legal and accounting activities,Services,101.2
+2018 Q4,Legal and accounting activities,Services,99.3
+2019 Q1,Legal and accounting activities,Services,96.9
+2019 Q2,Legal and accounting activities,Services,98.8
+2019 Q3,Legal and accounting activities,Services,102.6
+2019 Q4,Legal and accounting activities,Services,101.8
+2020 Q1,Legal and accounting activities,Services,98.6
+2020 Q2,Legal and accounting activities,Services,94.9
+2020 Q3,Legal and accounting activities,Services,95
+2020 Q4,Legal and accounting activities,Services,94.4
+2021 Q1,Legal and accounting activities,Services,101.1
+2021 Q2,Legal and accounting activities,Services,102.3
+2017 Q1,Scientific research and development,Healthcare,99.3
+2017 Q2,Scientific research and development,Healthcare,92.7
+2017 Q3,Scientific research and development,Healthcare,96.3
+2017 Q4,Scientific research and development,Healthcare,103.1
+2018 Q1,Scientific research and development,Healthcare,103.9
+2018 Q2,Scientific research and development,Healthcare,107.3
+2018 Q3,Scientific research and development,Healthcare,111.9
+2018 Q4,Scientific research and development,Healthcare,110.4
+2019 Q1,Scientific research and development,Healthcare,99.1
+2019 Q2,Scientific research and development,Healthcare,94.2
+2019 Q3,Scientific research and development,Healthcare,101.3
+2019 Q4,Scientific research and development,Healthcare,105.4
+2020 Q1,Scientific research and development,Healthcare,109.2
+2020 Q2,Scientific research and development,Healthcare,103.3
+2020 Q3,Scientific research and development,Healthcare,100.8
+2020 Q4,Scientific research and development,Healthcare,98.4
+2021 Q1,Scientific research and development,Healthcare,94.9
+2021 Q2,Scientific research and development,Healthcare,101.7
+2017 Q1,"Office administrative, office support and other business support activities",Services,103.5
+2017 Q2,"Office administrative, office support and other business support activities",Services,110.6
+2017 Q3,"Office administrative, office support and other business support activities",Services,106.1
+2017 Q4,"Office administrative, office support and other business support activities",Services,108.5
+2018 Q1,"Office administrative, office support and other business support activities",Services,111.5
+2018 Q2,"Office administrative, office support and other business support activities",Services,114.9
+2018 Q3,"Office administrative, office support and other business support activities",Services,111.5
+2018 Q4,"Office administrative, office support and other business support activities",Services,106.1
+2019 Q1,"Office administrative, office support and other business support activities",Services,105.2
+2019 Q2,"Office administrative, office support and other business support activities",Services,104.3
+2019 Q3,"Office administrative, office support and other business support activities",Services,95.1
+2019 Q4,"Office administrative, office support and other business support activities",Services,95.4
+2020 Q1,"Office administrative, office support and other business support activities",Services,97.4
+2020 Q2,"Office administrative, office support and other business support activities",Services,101.4
+2020 Q3,"Office administrative, office support and other business support activities",Services,117.3
+2020 Q4,"Office administrative, office support and other business support activities",Services,97
+2021 Q1,"Office administrative, office support and other business support activities",Services,105.4
+2021 Q2,"Office administrative, office support and other business support activities",Services,92.4
+2017 Q1,Education,Education,91.2
+2017 Q2,Education,Education,90.5
+2017 Q3,Education,Education,93.6
+2017 Q4,Education,Education,93.8
+2018 Q1,Education,Education,94.6
+2018 Q2,Education,Education,95.4
+2018 Q3,Education,Education,95.7
+2018 Q4,Education,Education,98.4
+2019 Q1,Education,Education,98.2
+2019 Q2,Education,Education,99.8
+2019 Q3,Education,Education,99.9
+2019 Q4,Education,Education,102.1
+2020 Q1,Education,Education,94.2
+2020 Q2,Education,Education,69.2
+2020 Q3,Education,Education,100.7
+2020 Q4,Education,Education,99.9
+2021 Q1,Education,Education,82.5
+2021 Q2,Education,Education,97.3
+2017 Q1,Human health activities,Healthcare,99.7
+2017 Q2,Human health activities,Healthcare,101.1
+2017 Q3,Human health activities,Healthcare,103.6
+2017 Q4,Human health activities,Healthcare,104.3
+2018 Q1,Human health activities,Healthcare,104.8
+2018 Q2,Human health activities,Healthcare,104.4
+2018 Q3,Human health activities,Healthcare,103.2
+2018 Q4,Human health activities,Healthcare,104
+2019 Q1,Human health activities,Healthcare,101.8
+2019 Q2,Human health activities,Healthcare,99.8
+2019 Q3,Human health activities,Healthcare,99.8
+2019 Q4,Human health activities,Healthcare,98.7
+2020 Q1,Human health activities,Healthcare,99.2
+2020 Q2,Human health activities,Healthcare,74.8
+2020 Q3,Human health activities,Healthcare,86.1
+2020 Q4,Human health activities,Healthcare,93.3
+2021 Q1,Human health activities,Healthcare,95
+2021 Q2,Human health activities,Healthcare,106.4
