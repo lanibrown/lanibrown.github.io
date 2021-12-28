@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-<!-- Richard Davies, Data Science 2021 -->
-
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
-
 <head>
 
 <link rel="stylesheet" href="index.css">
@@ -13,7 +8,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
     </style>
   
-<!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
@@ -22,25 +16,41 @@
 
 <body>
 
-<h1> Lani Brown's Data Science Project </h1>
+<h1> Project </h1>
 
     <a href="index" class="button">Portfolio</a>
     
 <p> This page will contain Lani Brown's Data Science project. </p>
     
-        <h2> The Effect of Working from Home on Productivity. </h2>
+        <h2> The Effect of Working from Home on Productivity within the US, UK and New Zealand (NZ). </h2>
     
   <h3>Introduction</h3>
 
-  <p>The aim of my project will be to examine the relationship between working from home and levels of labour productivity. Throughout the pandemic, many industries changed from being office-based to encouraging their workers to work from home. The changes in the level of people working from home can be seen below. </p>
+  <p>The aim of my project will be to examine the relationship between working from home and levels of labour productivity. Throughout the pandemic, many industries changed from being office-based to encouraging their workers to work from home. The changes in the level of people working from home in the three countries specified can be seen below. </p>
     
-<!--Chart 9 -->
+       <!--Chart 9 -->
   <div class="chart" id="chart9">
       <script>
         var myChart9 = "workingfromhomefreq.json";
         vegaEmbed('#chart9', myChart9);
       </script>
   </div>
+    
+        <!--Chart 14 -->
+  <div class="chart" id="chart14">
+      <script>
+        var myChart14 = "PEWwfh.json";
+        vegaEmbed('#chart14', myChart14);
+      </script>
+  </div>   
+    
+         <!--Chart 15 -->
+<div class="chart" id="chart15">
+  <script>
+    var myChart15 = "nzworkfromhome.json";
+    vegaEmbed('#chart15', myChart15);
+  </script>
+</div>
 
    <p> After the Coronavirus pandemic hit, the only category of working from home to increase was ‘mainly’, indicating that the proportion of people using home as their primary place of work increased. All other categories decreased after 2019, again pointing towards a major change in the percentage of those working from home. </p>
 
@@ -59,16 +69,7 @@
 <p> We can see from this chart that after an initial fall in output per hour, both countries recovered and saw an increase in output per hour in early-mid 2020. The US recovered more wuickly than the UK, and both the dip and subsequent rise in output per hour was larger. </p>
     
 <p> A major issue with this project and analysing the data was that when looking at the direct productivity data, it is hard to say whether a dip in productivity over the period of the pandemic was caused by working from home, or people simply not working. In order to combat this, I have included countries such as New Zealand, who have published data regarding how many people were working from home and how many weren’t working at all due to restrictions. I have also attempted to focus on the time periods where the furlough scheme wasn’t in place, as well as look at a country similar in demographic to the UK but that didn’t offer as extensive a furlough scheme, such as the US, in order to hopefully gauge the isolated impact of working from home. </p>
-
-               <!--Chart 14 -->
-<div class="chart" id="chart14">
-  <script>
-    var myChart14 = "nzworkfromhome.json";
-    vegaEmbed('#chart14', myChart14);
-  </script>
-</div>
-    
-    <p> This chart shows clearly that where the pandemic was more severe, more people worked from home, but many more people didn't work at all. </p>
+   
     
     <p> To try and account for this large number of people in furlough, I will be looking at the comparison of the UK and New Zealand - both countries with large numbers of furloughed employees - with the US, which didn't offer a similar scale furlough scheme. More people in the US were classified as unemployed rather than furloughed, and so wouldn't be included in the productivity data. </p>
     
@@ -90,9 +91,9 @@
   </script>
 </div>
 
-<p> All data in these two charts are from the same OECD sources hosted on GitHub, and should therefore be comparible. We can see that seemingly the impact of minimal furlough had a large impact on the productivity of the US in comparison with the UK and NZ. The productivity in the US increasing may also be seen as an indication that working from home does increase productivity, however there are several other factors that may contribute to this, such as the low productivity workers being the first to be made unemployed, increasing productivity. </p>
+<p> A major issue I found with worldwide productivity data was that it wasn't recent enough. The prodctivity data available on OECD was only yearly, providing a comparison only between one value for 2019 and one value for 2020. Instead, I used the OECD's forecasted productivity levels, which are quarterly and use collected data then a model is used taking into account world events and individual economic climate. All data in these two charts are from OECD sources hosted on GitHub, and should therefore be very well comparible. We can see that seemingly the impact of minimal furlough had a large impact on the productivity of the US in comparison with the UK and NZ. The productivity in the US increasing and having less people furloughed may be seen as an indication that working from home does increase productivity, however there are several other factors that may contribute to this, such as the low productivity workers being the first to be made unemployed, increasing productivity. </p>
     
-<p>It is difficult to know the success of these attempts. Due to this, I also included data from a survey of people analysing their own productivity when working from home and not.</p>
+<p>It is difficult to know the success of these attempts. Due to this, I also included data from a survey of people in the US analysing their own productivity when working from home and not.</p>
 
                <!--Chart 15 -->
 <div class="chart" id="chart15">
@@ -100,7 +101,7 @@
     var myChart15 = "PEWproductivity.json";
     vegaEmbed('#chart15', myChart15);
   </script>
-</div>
+    </div>
     
     <p> In order to take this research further, data would have to be collected on the exact number of people on furlough so they could be discounted from any productivity figures. Alternatively, specific productivity data would need to be collected and categorised as working from home or in office. In recent months it would be even more difficult to isolate the effect as many people have switched to ‘hybrid working’ - spending some days at home and some in the office. </p>
     
