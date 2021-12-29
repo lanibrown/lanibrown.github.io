@@ -1,0 +1,243 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Productivity Index by Sector of the UK (Interactive Legend)",
+    "subtitle": "The Index of productivity (100 = 2019) by sector of the UK. Source: ONS Highlight a line by clicking on the legend.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/productivitybysector.csv"},
+  "columns": 2,
+  "concat": [
+  {
+    "params": [{
+    "name": "industry",
+    "select": {"type": "point", "fields": ["Title"]},
+    "bind": "legend"
+  }],
+  "title": "Whole Economy",
+  "mark": {"type": "line", "clip": true},
+  "transform": [{"filter": {"field": "Category", "oneOf": ["Whole Economy"]}}],
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "title": "Productivity",
+      "sort": "y",
+        "scale": {
+        "domainMax": 160,
+        "domainMin": 40,
+        "type": "linear",
+        "zero": false
+      }
+    },
+    "x": {"field": "Year", "type": "nominal"},
+    "color": {
+    "scale": {"scheme": "turbo"},
+    "sort": ["Category"],
+    "field": "Title",
+    "legend": {
+    "rowPadding": 5,
+    "title": "Sector: Whole Economy",
+    "labelLimit": 400
+    }
+    },
+    "opacity": {
+      "condition": {"param": "industry", "value": 1},
+      "value": 0.2
+    }
+  }
+  },
+    {
+    "params": [{
+    "name": "industry",
+    "select": {"type": "point", "fields": ["Title"]},
+    "bind": "legend"
+  }],
+    "title": "Agriculture",
+  "mark": {"type": "line", "clip": true},
+      "transform": [{"filter": {"field": "Category", "oneOf": ["Agriculture"]}}],
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "title": "Productivity",
+      "sort": "y",
+        "scale": {
+        "domainMax": 160,
+        "domainMin": 40,
+        "type": "linear",
+        "zero": false
+      }
+    },
+    "x": {"field": "Year", "type": "nominal"},
+    "color": {
+    "scale": {"scheme": "turbo"},
+    "sort": ["Category"],
+    "field": "Title",
+    "legend": {
+    "rowPadding": 5,
+    "title": "Sector",
+    "labelLimit": 400
+    }
+    },
+      "opacity": {
+      "condition": {"param": "industry", "value": 1},
+      "value": 0.2
+    }
+  }
+    },
+    {
+          "params": [{
+    "name": "industry",
+    "select": {"type": "point", "fields": ["Title"]},
+    "bind": "legend"
+  }],
+          "title": "Manufacturing",
+  "mark": {"type": "line", "clip": true},
+      "transform": [{"filter": {"field": "Category", "oneOf": ["Manufacturing"]}}],
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "title": "Productivity",
+      "sort": "y",
+        "scale": {
+        "domainMax": 160,
+        "domainMin": 40,
+        "type": "linear",
+        "zero": false
+      }
+    },
+    "x": {"field": "Year", "type": "nominal"},
+    "color": {
+    "scale": {"scheme": "turbo"},
+    "sort": ["Category"],
+    "field": "Title",
+    "legend": {
+    "rowPadding": 5,
+    "title": "Sector",
+    "labelLimit": 400
+    }
+    },
+          "opacity": {
+      "condition": {"param": "industry", "value": 1},
+      "value": 0.2
+    }
+  }
+    },
+    {
+          "params": [{
+    "name": "industry",
+    "select": {"type": "point", "fields": ["Title"]},
+    "bind": "legend"
+  }],
+  "title": "Retail/Hospitality",
+  "mark": {"type": "line", "clip": true},
+      "transform": [{"filter": {"field": "Category", "oneOf": ["Retail/Hospitality"]}}],
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "title": "Productivity",
+      "sort": "y",
+        "scale": {
+        "domainMax": 160,
+        "domainMin": 40,
+        "type": "linear",
+        "zero": false
+      }
+    },
+    "x": {"field": "Year", "type": "nominal"},
+    "color": {
+    "scale": {"scheme": "turbo"},
+    "sort": ["Category"],
+    "field": "Title",
+    "legend": {
+    "rowPadding": 5,
+    "title": "Sector",
+    "labelLimit": 400
+    }
+    },
+        "opacity": {
+      "condition": {"param": "industry", "value": 1},
+      "value": 0.2
+    }
+  }
+    },
+      {
+            "params": [{
+    "name": "industry",
+    "select": {"type": "point", "fields": ["Title"]},
+    "bind": "legend"
+  }],
+        "title": "Services",
+  "mark": {"type": "line", "clip": true},
+      "transform": [{"filter": {"field": "Category", "oneOf": ["Services"]}}],
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "title": "Productivity",
+      "sort": "y",
+        "scale": {
+        "domainMax": 160,
+        "domainMin": 40,
+        "type": "linear",
+        "zero": false
+      }
+    },
+    "x": {"field": "Year", "type": "nominal"},
+    "color": {
+    "scale": {"scheme": "turbo"},
+    "sort": ["Category"],
+    "field": "Title",
+    "legend": {
+    "rowPadding": 5,
+    "title": "Sector",
+    "labelLimit": 400
+    }
+    },
+        "opacity": {
+      "condition": {"param": "industry", "value": 1},
+      "value": 0.2
+    }
+  }
+    },
+    {
+          "params": [{
+    "name": "industry",
+    "select": {"type": "point", "fields": ["Title"]},
+    "bind": "legend"
+  }],
+  "title": "Healthcare",
+  "mark": {"type": "line", "clip": true},
+      "transform": [{"filter": {"field": "Category", "oneOf": ["Healthcare"]}}],
+  "encoding": {
+    "y": {
+      "field": "Value",
+      "title": "Productivity",
+      "sort": "y",
+        "scale": {
+        "domainMax": 160,
+        "domainMin": 40,
+        "type": "linear",
+        "zero": false
+      }
+    },
+    "x": {"field": "Year", "type": "nominal"},
+    "color": {
+    "scale": {"scheme": "turbo"},
+    "sort": ["Category"],
+    "field": "Title",
+    "legend": {
+    "rowPadding": 5,
+    "title": "Sector",
+    "labelLimit": 400
+    }
+    },
+        "opacity": {
+      "condition": {"param": "industry", "value": 1},
+      "value": 0.2
+    }
+  }
+    }
+  ]
+}
