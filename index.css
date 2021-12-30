@@ -22,19 +22,12 @@ h1, h3{
   min-width: 800px;
 }
 
-.dashboardButton{
-  background: #33A8FF;
-  border-radius: none;
-  color: blue;
-  padding: 15px;
-  font-family: 'Raleway', sans-serif;
-}
 
 .button {
   background: #483D8B;
   border-radius: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 390px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
