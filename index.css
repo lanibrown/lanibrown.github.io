@@ -11,15 +11,14 @@ h1, h3{
 }
 
 .chart{
-  background-color: rgb(220, 241, 255);
-  border-style: double;
-  border-color: #483D8B;
+  background-color: white;
+  border-style: solid;
+  border-color: white;
   border-width: 2px;
   border-radius: 5px;
   text-align: center;
   padding: 10px;
-  width: 800px;
-  min-width: 800px;
+  max-width: 800px;
 }
 
 
