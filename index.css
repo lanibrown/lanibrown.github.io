@@ -43,3 +43,9 @@ h1, h3{
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
