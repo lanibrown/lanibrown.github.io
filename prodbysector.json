@@ -12,6 +12,7 @@
   "columns": 2,
   "concat": [
   {
+    "width": 300,
     "params": [{
     "name": "industry",
     "select": {"type": "point", "fields": ["Title"]},
@@ -39,7 +40,8 @@
     "field": "Title",
     "legend": {
     "rowPadding": 5,
-    "title": "Sector: Whole Economy",
+    "title": "Sector",
+    "titlePadding": 5,
     "labelLimit": 400
     }
     },
@@ -50,6 +52,7 @@
   }
   },
     {
+    "width": 300,
     "params": [{
     "name": "industry",
     "select": {"type": "point", "fields": ["Title"]},
@@ -76,9 +79,13 @@
     "sort": ["Category"],
     "field": "Title",
     "legend": {
-    "rowPadding": 5,
+    "rowPadding": 15,
     "title": "Sector",
-    "labelLimit": 400
+    "labelLimit": 400,
+    "orient": "top",
+    "direction": "vertical",
+    "columns": 2,
+    "titleFontSize": 15
     }
     },
       "opacity": {
@@ -88,6 +95,7 @@
   }
     },
     {
+      "width": 300,
           "params": [{
     "name": "industry",
     "select": {"type": "point", "fields": ["Title"]},
@@ -126,6 +134,7 @@
   }
     },
     {
+      "width": 300,
           "params": [{
     "name": "industry",
     "select": {"type": "point", "fields": ["Title"]},
@@ -164,6 +173,7 @@
   }
     },
       {
+        "width": 300,
             "params": [{
     "name": "industry",
     "select": {"type": "point", "fields": ["Title"]},
@@ -202,7 +212,8 @@
   }
     },
     {
-          "params": [{
+    "width": 300,
+    "params": [{
     "name": "industry",
     "select": {"type": "point", "fields": ["Title"]},
     "bind": "legend"
