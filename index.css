@@ -7,15 +7,16 @@
 body{
     background-color: rgb(220, 241, 255);
     max-width: 700px;
-    margin: auto;
+    margin: 0;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h3, p{
     color:rgb(17, 17, 17);
     font-family: 'Raleway', sans-serif;
-    text-align: center;
 }
 
 .chart{
@@ -25,7 +26,6 @@ h1, h3, p{
     border-style: solid;
     border-radius: 5px;
     border-color: white;
-    text-align: center;
     margin: 0px auto;
 }
 
