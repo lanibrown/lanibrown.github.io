@@ -1,19 +1,24 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-      "text": "People Working From Home UK",
-      "subtitle":"The percentage of people reported in each working from home status in the UK. Source: ONS, April 2020",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"},
-  "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/Homeworking.csv"},
-  "height": 400,
+    "text": "People Working From Home UK",
+    "subtitle": "The percentage of people reported in each working from home status in the UK. Source: ONS, April 2020",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/Homeworking.csv"
+  },
+  "height": 300,
   "width": 70,
   "mark": "bar",
   "encoding": {
     "column": {
-      "field": "Category", "type": "ordinal", "spacing": 30,
+      "field": "Category",
+      "type": "ordinal",
+      "spacing": 20,
       "header": {"orient": "bottom"}
     },
     "y": {
@@ -22,18 +27,24 @@
       "type": "quantitative",
       "axis": {"grid": false}
     },
-    "x": {
-      "field": "Year",
-      "axis": null
-    },
+    "x": {"field": "Year", "axis": null},
     "color": {
       "field": "Year",
-      "scale": {"range": ["#ca8861","#ca8861","#ca8861","#ca8861","#ca8861", "#ca8861", "#ca8861", "#ca8861", "#ca8861", "#675193"]}
-      
+      "scale": {
+        "range": [
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#f16e43",
+          "#64bc61"
+        ]
+      }
     }
   },
-  "config": {
-    "view": {"stroke": "transparent"},
-    "axis": {"domainWidth": 1}
-  }
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
 }
