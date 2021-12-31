@@ -1,75 +1,226 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-
-    "description": "Chart that uses repeated layers to make multiple calls to an API",
-
-    "width":500,
-    "height":350,
-    
-    "title": {
-      "text": "Output per Hour for All Employed Persons",
-      "subtitle":"Percent Change at Annual Rate, Seasonally Adjusted. US Source: FRED, UK Source: ONS",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"
-    },
-
-    "encoding": {
-      "x": {"field": "date3", "type": "temporal", "title": null, "axis": {"grid": false}},
-      "y": {"field": "value", "type": "quantitative", "title": null, "axis": {"grid": true}},
-      "color":{"field":"sourceDataset", "title":"Legend", "legend":{"orient": "top-right", "labelExpr": "datum.label == 'undefined' ? 'US' :datum.label == 'PRDY' ? 'UK' : 'UK'"}}
-    },
-
-    "layer": [
-      
-      {"data": {
-"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/lzvd/dataset/prdy/data",
-"format": {"type": "json", "property": "quarters"}
-  },
-
-"mark": {"type": "line", "color": "#ff0000"},
-"transform": [
-    {"calculate": "substring(datum.quarter,1)*3-1", "as": "quarter_n"},
-    {"calculate": "join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
-    {"calculate": "timeParse(datum.date2, '%Y-%m')", "as": "date3"},
-    {"filter": {"field": "year", "range": [2018, 2021]}}
-  ],
-"title": {
-"text": "Output per Hour Worked Time Series",
-"subtitle": "% change per annum (UK) Source: ONS",
-"subtitleFontStyle": "italic",
-"subtitleFontSize": 10,
-"anchor": "start",
-"color": "black"
-  },
-"encoding": {
-"x": {"field": "date3", "type": "temporal", "title": null},
-"y": {"field": "value", "type": "quantitative", "title": null}
-  }
-      },
-
-{"data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/observations.json",
-       "format": {"type": "json", "property": "observations"}
-  },
-    "transform": [{
-    "filter": {"field": "date", "range": [1514764800000, 1617235200000]}
-      }],
-
-      "title": {
-    "text": "Nonfarm Business Sector: Labor Productivity (Output per Hour) for All Employed Persons",
-    "subtitle": "Percent Change at Annual Rate, Quarterly, Seasonally Adjusted. Source: FRED",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Chart that uses repeated layers to make multiple calls to an API",
+  "background": "white",
+  "padding": 5,
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "Output per Hour for All Employed Persons",
+    "subtitle": "Percent Change at Annual Rate, Seasonally Adjusted. US Source: FRED, UK Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-"mark": {"type": "line", "color": "#001aff"},
-  "encoding": {
-    "x": {"field": "date", "type": "temporal", "title":"Date","scale": {"domain": [1514764800000, 1619835200000]}},
-    "y": {"field": "value", "type": "quantitative","scale": {"domain": [-10,15]},"title":"Output per Hour"}
-  }
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/lzvd/dataset/prdy/data",
+      "format": {
+        "type": "json",
+        "property": "quarters",
+        "parse": {"year": "number"}
+      },
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "substring(datum.quarter,1)*3-1",
+          "as": "quarter_n"
+        },
+        {
+          "type": "formula",
+          "expr": "join([datum.year, datum.quarter_n],['-'])",
+          "as": "date2"
+        },
+        {
+          "type": "formula",
+          "expr": "timeParse(datum.date2, '%Y-%m')",
+          "as": "date3"
+        },
+        {"type": "filter", "expr": "inrange(datum[\"year\"], [2018, 2021])"}
+      ]
+    },
+    {
+      "name": "source_1",
+      "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/observations.json",
+      "format": {
+        "type": "json",
+        "property": "observations",
+        "parse": {"date": "date"}
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "inrange(datum[\"date\"], [1514764800000, 1617235200000])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_layer_0_main",
+          "data": "source_0",
+          "groupby": ["sourceDataset"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "layer_0_marks",
+          "type": "line",
+          "style": ["line"],
+          "sort": {"field": "datum[\"date3\"]"},
+          "from": {"data": "faceted_path_layer_0_main"},
+          "encode": {
+            "update": {
+              "stroke": {"scale": "color", "field": "sourceDataset"},
+              "description": {
+                "signal": "\"Month: \" + (timeFormat(datum[\"date3\"], '%b %d, %Y')) + \"; Percentage Change: \" + (format(datum[\"value\"], \"\")) + \"; Legend: \" + (isValid(datum[\"sourceDataset\"]) ? datum[\"sourceDataset\"] : \"\"+datum[\"sourceDataset\"])"
+              },
+              "x": {"scale": "x", "field": "date3"},
+              "y": {"scale": "y", "field": "value"},
+              "defined": {
+                "signal": "isValid(datum[\"date3\"]) && isFinite(+datum[\"date3\"]) && isValid(datum[\"value\"]) && isFinite(+datum[\"value\"])"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer_1_pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_layer_1_main",
+          "data": "source_1",
+          "groupby": ["sourceDataset"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "layer_1_marks",
+          "type": "line",
+          "style": ["line"],
+          "sort": {"field": "datum[\"date\"]"},
+          "from": {"data": "faceted_path_layer_1_main"},
+          "encode": {
+            "update": {
+              "stroke": {"scale": "color", "field": "sourceDataset"},
+              "description": {
+                "signal": "\"Month: \" + (timeFormat(datum[\"date\"], '%b %d, %Y')) + \"; Percentage Change: \" + (format(datum[\"value\"], \"\")) + \"; Legend: \" + (isValid(datum[\"sourceDataset\"]) ? datum[\"sourceDataset\"] : \"\"+datum[\"sourceDataset\"])"
+              },
+              "x": {"scale": "x", "field": "date"},
+              "y": {"scale": "y", "field": "value"},
+              "defined": {
+                "signal": "isValid(datum[\"date\"]) && isFinite(+datum[\"date\"]) && isValid(datum[\"value\"]) && isFinite(+datum[\"value\"])"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "time",
+      "domain": {
+        "fields": [
+          {"signal": "{data: datetime(1514764800000)}"},
+          {"signal": "{data: datetime(1619835200000)}"}
+        ]
+      },
+      "range": [0, {"signal": "width"}]
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": [-10, 15],
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "sourceDataset"},
+          {"data": "source_1", "field": "sourceDataset"}
+        ],
+        "sort": true
+      },
+      "range": "category"
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": true,
+      "gridScale": "x",
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Month",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Percentage Change",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "orient": "top-right",
+      "title": "Legend",
+      "stroke": "color",
+      "symbolType": "stroke",
+      "encode": {
+        "labels": {
+          "update": {
+            "text": {
+              "signal": "datum.label == 'undefined' ? 'US' :datum.label == 'PRDY' ? 'UK' : 'UK'"
+            }
+          }
+        }
       }
-    ]
+    }
+  ]
 }
