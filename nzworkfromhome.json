@@ -8,15 +8,24 @@
     "anchor": "start",
     "color": "black"
   },
-  "repeat": ["Worked at home", "Worked outside of home", "Did not work during reference week"],
+  "repeat": [
+    "Worked at home",
+    "Worked outside of home",
+    "Did not work during reference week"
+  ],
   "columns": 3,
   "spec": {
-    "data": {"url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/nzworkfromhome.csv"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/lanibrown/lanibrown.github.io/main/nzworkfromhome.csv"
+    },
     "mark": "bar",
     "encoding": {
       "x": {"field": "COVID-19 alert level", "title": ""},
       "y": {"field": {"repeat": "repeat"}, "type": "quantitative"},
-      "color": {"field": "COVID-19 alert level", "scale": {"scheme": "tealblues"}}
+      "color": {
+        "field": "COVID-19 alert level",
+        "scale": {"scheme": "purpleorange"}
+      }
     }
   }
 }
