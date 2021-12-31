@@ -24,7 +24,7 @@
       "y": {"field": {"repeat": "repeat"}, "type": "quantitative"},
       "color": {
         "field": "COVID-19 alert level",
-        "scale": {"scheme": "purpleorange"}
+        "scale": {"scheme": "redyellowgreen"}
       }
     }
   }
