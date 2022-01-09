@@ -27,7 +27,7 @@
     
   <h3>Introduction</h3>
 
-  <p>The aim of my project will be to examine the relationship between working from home and levels of labour productivity. Throughout the pandemic, many industries changed from being office-based to encouraging their workers to work from home. The changes in the level of people working from home in the three countries specified can be seen below. </p>
+  <p>The aim of my project is to examine the relationship between working from home and levels of labour productivity, through the lens of three specified countries during the COVID-19 pandemic. Many industries changed from being office-based to encouraging their workers to work from home. The changes in the level of people working from home in the UK, US and NZ can be seen below. </p>
     
  <div class="container">
      
@@ -68,9 +68,7 @@
     
 </div>
 
-   <p> After the Coronavirus pandemic hit, the only category of working from home to increase was ‘mainly’, indicating that the proportion of people using home as their primary place of work increased. All other categories decreased after 2019, again pointing towards a major change in the percentage of those working from home. </p>
-
-   <p>This being the case, I was curious to see whether the level of economy-wide output per hour changed at all. It could have improved as the time spent commuting was reduced and so people may be better rested, or it may have decreased as there is unlikely to be the same moderation of work at home than there is in an office. Perhaps there will be no difference at all, as the proportion of those who are now working from home make up such a small proportion of the labour force as a whole it won’t change much. </p> 
+   <p>In the UK after the pandemic hit, the proportion of people using home as their primary place of work increased. The US data taken from a survey completed by the PEW research centre shows a similar pattern. While this data was not available in New Zealand, there was data showing when the severity of the pandemic was higher, more people worked from home. </p>
     
 <div class="container">
     
@@ -84,15 +82,12 @@
     
 </div>    
    
-<p> This chart consists of UK and US data from different sources. The UK data comes from an ONS API, and the US data from FRED data hosted on GitHub. Both are easily downloadable and this chart should be very repeatable. </p>
-    
-<p> We can see from this chart that after an initial fall in output per hour, both countries recovered and saw an increase in output per hour in early-mid 2020. The US recovered more wuickly than the UK, and both the dip and subsequent rise in output per hour was larger. </p>
-    
-<p> A major issue with this project and analysing the data was that when looking at the direct productivity data, it is hard to say whether a dip in productivity over the period of the pandemic was caused by working from home, or people simply not working. In order to combat this, I have included countries such as New Zealand, who have published data regarding how many people were working from home and how many weren’t working at all due to restrictions. I have also attempted to focus on the time periods where the furlough scheme wasn’t in place, as well as look at a country similar in demographic to the UK but that didn’t offer as extensive a furlough scheme, such as the US, in order to hopefully gauge the isolated impact of working from home. </p>
-   
-    
-    <p> To try and account for this large number of people in furlough, I will be looking at the comparison of the UK and New Zealand - both countries with large numbers of furloughed employees - with the US, which didn't offer a similar scale furlough scheme. More people in the US were classified as unemployed rather than furloughed, and so wouldn't be included in the productivity data. </p>
-    
+<p> This chart displaying the percentage change of output per hour in the UK and US consists of data from different sources layered into the same graph. The UK data comes from an ONS API, and the US data from FRED data hosted on GitHub. Both are easily found, and this chart should be very repeatable. Unfortunately, data on New Zealand was unavailable. As the UK data is sourced from an API it will update automatically as more data is available, however the FRED data will not. </p>    
+
+<p> The trends in both countries seemed to be a gradual decline in percentage change of output per hour, however this was strongly reversed in early 2020 for the US. The cyclical nature of the percentage change indicates that it has something to do with the effect of the numerous lockdowns, however it is difficult to know whether this is due to the working from home orders or other factors.</p>
+
+<p>The main reason the US was included in this project was because there wasn’t a furlough scheme. As a result, many more people were counted as unemployed and therefore not included in productivity statistics such as total output per worker. This will hopefully overcome the issue of identifying the effect of working from home in the UK and NZ.</p>
+      
  <div class="container">   
     
                <!--Chart 12 -->
@@ -119,10 +114,12 @@
      
  </div>    
 
-<p> A major issue I found with worldwide productivity data was that it wasn't recent enough. The prodctivity data available on OECD was only yearly, providing a comparison only between one value for 2019 and one value for 2020. Instead, I used the OECD's forecasted productivity levels, which are quarterly and use collected data then a model is used taking into account world events and individual economic climate. All data in these two charts are from OECD sources hosted on GitHub, and should therefore be very well comparible. We can see that seemingly the impact of minimal furlough had a large impact on the productivity of the US in comparison with the UK and NZ. The productivity in the US increasing and having less people furloughed may be seen as an indication that working from home does increase productivity, however there are several other factors that may contribute to this, such as the low productivity workers being the first to be made unemployed, increasing productivity. </p>
-    
-<p> In order to tackle this issue with country comparison data, I have compiled a graph comparing the productivity index for different sectors of the UK. The data was found on ONS then filtered to the most relevant. If the same data categories are used, the graph should be repeatable by someone else.</p>
-    
+<p> The productivity in the US increasing may be seen as an indication that working from home does increase productivity, however there are several other factors that may contribute to this, such as the low productivity workers potentially being the first to be made unemployed, increasing average productivity. Interestingly, this method of measuring productivity – output per worker – conflicts with the data on output per hour for the US. Research would have to be done as to why this is – perhaps more hours were worked. </p>
+
+<p> The productivity data available on OECD was only yearly. To overcome this, I used the OECD's forecasted productivity levels, which are quarterly and use both collected data and a predictive model considering world events and individual economic climates. All data in these two charts are from OECD sources hosted on GitHub and should therefore be comparable. Unfortunately, API resources for the OECD are limited and didn’t include this forecasted data so it is not automated and would have to be updated manually.</p>
+
+<p> To tackle this issue with country comparison data, I have compiled a graph comparing the actual non-forecasted productivity index for different sectors of the UK. The data was found on ONS then filtered manually to the most relevant. This shows that the sector you are in makes a large difference to the productivity changes. </p>
+   
  <div class="container">    
     
                 <!--Chart 18 -->
@@ -135,21 +132,11 @@
      
 </div>     
     
-<p> It is difficult to know the success of these attempts. Due to this, I also included data from a survey of people in the US analysing their own productivity when working from home and not.</p>
+<p> Those most able to work from home are in the services industry. When compared to the others, the trend is more universal across the individual sectors. Manufacturing, retail/hospitality, and agriculture are very variable across the period, whereas services, with a few exceptions, follows a more distinctive trend. What I infer from this is that the lockdowns had less of a radical effect on the service industry due to the ability to work from home.</p>
 
- <div class="container">     
-    
-               <!--Chart 17 -->
-<div class="chart" id="chart17">
-  <script>
-    var myChart17 = "PEWproductivity.json";
-    vegaEmbed('#chart17', myChart17);
-  </script>
-    </div>
-     
- </div>     
-    
-    <p> In order to take this research further, data would have to be collected on the exact number of people on furlough so they could be discounted from any productivity figures. Alternatively, specific productivity data would need to be collected and categorised as working from home or in office. In recent months it would be even more difficult to isolate the effect as many people have switched to ‘hybrid working’ - spending some days at home and some in the office. </p>
-    
+<p> However, the trend does show the productivity index slowly decreasing. Given the similarity of New Zealand to the UK, I assume this result would also be similar. This indicates that the average productivity is lower during periods of more people working from home than in the office, however there is not enough evidence for a solid causal link. The contradictory nature of the US data in relation to productivity changes reinforces this.</p>
+
+<p> To take this research further, data would have to be collected on the number of people on furlough so they could be discounted from any productivity figures. Alternatively, specific productivity data would need to be collected and categorised as working from home or in office. In recent months it would be even more difficult to isolate the effect as many people have switched to ‘hybrid working’ - spending some days at home and some in the office.</p>
+        
 </body>
 </html>
